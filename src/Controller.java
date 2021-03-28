@@ -25,7 +25,7 @@ public class Controller {
 
     @FXML
     void handleButtonAction(ActionEvent event) {
-      System.out.println("Button is clicled. ");
+      System.out.println("Button is clicled on comp. ");
 
     }
 
