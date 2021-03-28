@@ -25,7 +25,11 @@ public class Controller {
 
     @FXML
     void handleButtonAction(ActionEvent event) {
-      System.out.println("Button is clicled on comp. ");
+      
+      System.out.println("Button is clicled on comp.  " + event.getSource());
+      if(event.getSource() instanceof Button ){
+        System.out.println("To checkbox.");
+      }
 
     }
 
@@ -40,7 +44,7 @@ public class Controller {
     }
 
     @FXML
-    void initialize() {
+    void initialize() { //wywoływana zaraz po konstruktorze, zmiana właściwości obiektów.
         assert btnClick != null : "fx:id=\"btnClick\" was not injected: check your FXML file 'example.fxml'.";
         assert date != null : "fx:id=\"date\" was not injected: check your FXML file 'example.fxml'.";
         assert colorPic != null : "fx:id=\"colorPic\" was not injected: check your FXML file 'example.fxml'.";
